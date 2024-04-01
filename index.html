@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<title>Manual J calculator</title>
+<link rel="stylesheet" href="style.css" />
+<script src="calculate.js"></script>
+<h1>Manual J calculator</h1>
+<h3>Measurements in feet</h2>
+
+<form onsubmit="calculateManualJ(event)" id="numbers">
+  <label for="sqft">Square Footage</label>
+  <input type="number" name="sqft" id="sqft" placeholder="Square Footage" />
+  <label for="people">Number of Occupants</label>
+  <input
+    type="number"
+    name="people"
+    id="people"
+    placeholder="Number of Occupants"
+  />
+  <label for="windows">Number of Windows</label>
+  <input
+    type="number"
+    name="windows"
+    id="windows"
+    placeholder="Number of Windows"
+  />
+  <label for="doors">Number of External Doors</label>
+  <input
+    type="number"
+    name="doors"
+    id="doors"
+    placeholder="Number of External Doors"
+  />
+  <label for="ceiling">Height of Ceiling</label>
+  <input
+    type="number"
+    name="ceiling"
+    id="ceiling"
+    placeholder="Height of Ceiling"
+  />
+  <button type="submit">Calculate</button>
+</form>
+<output id="result"></output>
